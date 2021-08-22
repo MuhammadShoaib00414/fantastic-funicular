@@ -17,6 +17,11 @@
     <link rel="stylesheet" type="text/css" href="/app-assets/vendors/chartist-js/chartist.min.css">
     <link rel="stylesheet" type="text/css" href="/app-assets/vendors/chartist-js/chartist-plugin-tooltip.css">
     <!-- END: VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="/app-assets/vendors/vendors.min.css">
+    <link rel="stylesheet" href="/app-assets/vendors/select2/select2.min.css" type="text/css">
+    <link rel="stylesheet" href="/app-assets/vendors/select2/select2-materialize.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/app-assets/css/pages/page-users.min.css">
+
     <!-- BEGIN: Page Level CSS-->
     <link rel="stylesheet" type="text/css" href="/app-assets/css/themes/horizontal-menu-template/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="/app-assets/css/themes/horizontal-menu-template/style.min.css">
@@ -50,7 +55,7 @@
           <div class="nav-wrapper">
             <ul class="left">
               <li>
-                <h1 class="logo-wrapper"><a class="brand-logo darken-1" href="index-2.html"><img src="/app-assets/images/logo/materialize-logo.png" alt="materialize logo"><span class="logo-text hide-on-med-and-down">All You User(Promoter)</span></a></h1>
+                <h1 class="logo-wrapper"><a class="brand-logo darken-1" href="/dashboard"><img src="/app-assets/images/logo/materialize-logo.png" alt="materialize logo"><span class="logo-text hide-on-med-and-down">All You User(Promoter)</span></a></h1>
               </li>
             </ul>
             <div class="header-search-wrapper hide-on-med-and-down"><i class="material-icons">search</i>
@@ -96,12 +101,12 @@
             </ul>
             <!-- profile-dropdown-->
             <ul class="dropdown-content" id="profile-dropdown">
-              <li><a class="grey-text text-darken-1" href="user-profile-page.html"><i class="material-icons">person_outline</i> Profile</a></li>
-              <li><a class="grey-text text-darken-1" href="app-chat.html"><i class="material-icons">chat_bubble_outline</i> Chat</a></li>
-              <li><a class="grey-text text-darken-1" href="page-faq.html"><i class="material-icons">help_outline</i> Help</a></li>
+              <li><a class="grey-text text-darken-1" href="#"><i class="material-icons">person_outline</i> User list</a></li>
+              <li><a class="grey-text text-darken-1" href="/profile"><i class="material-icons">chat_bubble_outline</i> User Edit</a></li>
+              <li><a class="grey-text text-darken-1" href="#"><i class="material-icons">help_outline</i> Help</a></li>
               <li class="divider"></li>
-              <li><a class="grey-text text-darken-1" href="user-lock-screen.html"><i class="material-icons">lock_outline</i> Lock</a></li>
-              <li><a class="grey-text text-darken-1" href="user-login.html"><i class="material-icons">keyboard_tab</i> Logout</a></li>
+              <li><a class="grey-text text-darken-1" href="#"><i class="material-icons">lock_outline</i> Lock</a></li>
+              <li><a class="grey-text text-darken-1" href="/logout"><i class="material-icons">keyboard_tab</i> Logout</a></li>
             </ul>
           </div>
           <nav class="display-none search-sm">
@@ -120,7 +125,7 @@
         <nav class="white hide-on-med-and-down" id="horizontal-nav">
           <div class="nav-wrapper">
             <ul class="left hide-on-med-and-down" id="ul-horizontal-nav" data-menu="menu-navigation">
-              <li><a  href="Javascript:void(0)" data-target="DashboardDropdown"><i class="material-icons">dashboard</i><span><span class="dropdown-title" data-i18n="Dashboard">Dashboard</span></span></a>
+              <li><a  href="/dashboard" data-target="DashboardDropdown"><i class="material-icons">dashboard</i><span><span class="dropdown-title" data-i18n="Dashboard">Dashboard</span></span></a>
                 
               </li>
               <li><a class="dropdown-menu" href="Javascript:void(0)" data-target="TemplatesDropdown"><i class="material-icons">dvr</i><span><span class="dropdown-title" data-i18n="Templates">Orders</span></span></a>
@@ -251,8 +256,8 @@
 @endauth<footer class="page-footer footer footer-static footer-dark gradient-45deg-light-blue-cyan gradient-shadow navbar-border navbar-shadow">
       <div class="footer-copyright">
         <div class="container" style="text-align: center;"><span>&copy; 2021<a href="https://maniwebify.com/">
-        Design and Developed by <a href="https://maniwebify.com/"><strong>ManiWebify Software</strong></a><
-          /span></div>
+        Design and Developed by <a href="https://maniwebify.com/"><strong>ManiWebify Software</strong></a>
+        </span></div>
       </div>
     </footer>
 
@@ -276,10 +281,14 @@
     <!-- BEGIN PAGE LEVEL JS-->
     <script src="/app-assets/js/scripts/dashboard-modern.js"></script>
     <script src="/app-assets/js/scripts/intro.min.js"></script>
-<script src="{{ mix('/js/app.js') }}"></script>
-<script src="/app-assets/js/scripts/dashboard-ecommerce.min.js"></script>
-<script src="/app-assets/vendors/chartjs/chart.min.js"></script>
-<script src="/app-assets/js/vendors.min.js"></script>
+  <script src="{{ mix('/js/app.js') }}"></script>
+  <script src="/app-assets/js/scripts/dashboard-ecommerce.min.js"></script>
+  <script src="/app-assets/vendors/chartjs/chart.min.js"></script>
+  <script src="/app-assets/js/vendors.min.js"></script>
+  <script src="/app-assets/js/scripts/page-users.min.js"></script>
+  <script src="/app-assets/vendors/select2/select2.full.min.js"></script>
+
+
 
 
 
